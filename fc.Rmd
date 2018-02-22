@@ -1,0 +1,105 @@
+---
+title: "FCandan_Odev"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Deðiþkenlere atama yapma
+
+R dilinde deðiþkenlere 2 türlü atama yapýlabilir
+Birincisi bildiðimiz klasik programlama dillerindeki = operatörü ile atama yapýlabilir
+Ýkinci olarak <- vektörel atama yapýlabilir
+deðiþkeni yazdýrmak için deðiþken ismi yazýlabilir
+
+```{r var}
+sayi=5
+sayi2 <- 19
+a<- 1:30
+mesaj= "Merhaba"
+msj="ÝZU"
+msj
+x <- c(0,1,2,3,4)
+y <- 1:5
+x + y
+```
+
+## Yazdýrma iþlemi
+
+Ekrana yazdýrmak için print fonksiyonu kullanýlýr.
+
+```{r }
+print(a)
+print("Merhaba")
+```
+
+## R’deki temel nesne türleri:
+
+???? numeric
+???? integer, double, complex
+???? character
+???? logical
+???? functio.
+
+
+
+## Dosyadan veri Okuma
+
+Veri okunacak dosyanýn yolu tanýmlanýr bunun için  path=("dosya yolu") tagý kullanýlabilir
+tanýmlana dosya yolundan read() komutu kullanarak okunabilir
+ path='C:/users/document/R_ornek/ornek.csv'
+ ornekdata=read.csv(path)
+ ornekdata
+
+```{r }
+path="veri.csv"
+ornekdata=read.csv(path)
+#ornekdata
+```
+## Vektör oluþturma
+
+
+```{r }
+x1 <- c(0.5, 0.6) ## numeric
+x2 <- c(TRUE, FALSE) ## logical
+x3 <- c(T, F) ## logical
+x4 <- c("a", "b", "c") ## character
+x5 <- 9:29 ## integer
+x6 <- c(1+0i, 2+4i) ## complex
+```
+
+
+### Vektör oluþturma
+R dili dizi ve matrislerde farklý türden degerleri tutabilir.
+
+```{r }
+y <- c(1:3, "Ankara",TRUE,3.14) 
+```
+
+## Objenin türünü ögrenme
+
+
+```{r }
+class(x)
+class(msj)
+```
+
+## Matrices
+m matrisinin satýr ve sütun sayýlarý verilerek oluþturulabilir
+
+m <- matrix(nrow = 2, ncol = 3)
+m <- matrix(1:6, nrow = 2, ncol = 3)
+
+```{r }
+m <- matrix(nrow = 2, ncol = 3)
+m <- matrix(1:6, nrow = 2, ncol = 3)
+```
+
+
+
+
+
+
+
